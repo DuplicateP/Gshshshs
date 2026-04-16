@@ -40,8 +40,8 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
-owner_id = [7517045929]
-auth_users = [7517045929]
+owner_id = [7357284659]
+auth_users = [7357284659]
 photo1 = 'https://ibb.co/nq0YLgGb'
 getstatusoutput(f"wget {photo1} -O 'photo.jpg'")    
 photo = "photo.jpg"
