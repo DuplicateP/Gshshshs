@@ -1004,7 +1004,7 @@ async def upload(bot: Client, m: Message):
                         
                 elif "youtu" in url:
                     try:
-                        await bot.send_photo(chat_id=m.chat.id, photo=ytimg, caption=ccyt)
+                        await bot.send_photo(chat_id=m.chat.id, photo=https://ibb.co/nq0YLgGb, caption=ccyt)
                         count += 1
                     except Exception as e:
                         await m.reply_text(str(e))
