@@ -40,10 +40,11 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
-pwimg = "https://graph.org/file/8add8d382169e326f67e0-3bf38f92e52955e977.jpg"
-#ytimg = "https://ibb.co/nq0YLgGb"
-cpimg = "https://graph.org/file/5ed50675df0faf833efef-e102210eb72c1d5a17.jpg"
-zipimg = "https://i.postimg.cc/C5T2SN20/photo-2025-04-02-18-19-12.jpg"
+owner_id = [7517045929]
+auth_users = [7517045929]
+photo1 = 'https://ibb.co/nq0YLgGb'
+getstatusoutput(f"wget {photo1} -O 'photo.jpg'")    
+photo = "photo.jpg"
 
 watermark_text = "𝗪𝗢𝗟𝗩𝗘𝗦 🐺"
 credit =("𝗪𝗢𝗟𝗩𝗘𝗦 🐺") 
@@ -1004,7 +1005,7 @@ async def upload(bot: Client, m: Message):
                         
                 elif "youtu" in url:
                     try:
-                        await bot.send_photo(chat_id=m.chat.id, photo=https://ibb.co/nq0YLgGb, caption=ccyt)
+                        await bot.send_photo(chat_id=m.chat.id, photo=photo, caption=ccyt)
                         count += 1
                     except Exception as e:
                         await m.reply_text(str(e))
