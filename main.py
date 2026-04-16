@@ -42,7 +42,7 @@ cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
 owner_id = [7357284659]
 auth_users = [7357284659]
-photo1 = 'https://ibb.co/nq0YLgGb'
+photo1 = 'https://i.ibb.co/JWBbf6Yn/IMG-20260416-174323-189.jpg'
 getstatusoutput(f"wget {photo1} -O 'photo.jpg'")    
 photo = "photo.jpg"
 
